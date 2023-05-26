@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI="mongodb://localhost:27017/inotebook";
+const mongoURI="mongodb+srv://shivamkh007:eButMduQQZjVvnUI@mytasklist.ozmqkaw.mongodb.net/?retryWrites=true&w=majority";
 mongoose.set('strictQuery', true);
 const connectToMongo=()=>{
     mongoose.connect(mongoURI,()=>{
