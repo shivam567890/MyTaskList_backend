@@ -14,5 +14,5 @@ app.use('/',async(req,res)=>{
   res.send("server is running");
 })
 app.listen(5000||process.env.PORT, () => {
-  console.log(`iNotebook backend  listening on port ${port}`)
+  console.log(`iNotebook backend  listening on port ${5000||process.env.PORT}`)
 })
