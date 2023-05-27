@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 mongoose.set('strictQuery', true);
 const connectToMongo=()=>{
-    mongoose.connect(MongoURI.process.env,()=>{
+    mongoose.connect(process.env.MongoURI,()=>{
         console.log("connected to Mongo Successsfully");
     })
 }
