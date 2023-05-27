@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const mongoURI="mongodb+srv://shivamkh007:eButMduQQZjVvnUI@mytasklist.ozmqkaw.mongodb.net/mytasklist?retryWrites=true&w=majority";
+require('dotenv').config();
 mongoose.set('strictQuery', true);
 const connectToMongo=()=>{
-    mongoose.connect(mongoURI,()=>{
+    mongoose.connect(MongoURI.process.env,()=>{
         console.log("connected to Mongo Successsfully");
     })
 }
